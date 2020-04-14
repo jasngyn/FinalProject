@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+/*	Google font used from https://fonts.google.com/ */
+  font-family: 'Lobster', cursive;
+  margin: auto;
+  padding: auto;
+}
+
+html,
+body {
+  background-color: #2CA490;
+  font-size: 15px;
+  overflow: hidden; /* remove scrollbar */
+}
+/* Title of webpage */
+header {
+  text-align: center;
+  font-size: 2rem;
+  color: #584327;
+}
+/* First header */
+#h2First {
+	font-size: 1.7rem;
+}
+/* To-Do list header */
+#h2List {
+	color: #584327;
+}
+/* Used display:grid for form for easier positioning */
+form {
+	display: grid;
+}
+/* When user enters something in the input, it will populate in a two column list */
+#toDoList {
+	column-count: 2;
+	grid-gap: 1rem;
+}
+
+.column {
+  	width: 100%;
+  	margin: 10px;
+  	display: inline-block;
+  	text-align: left;
+}
+/* Centered container */
+.container {
+	margin: auto;
+	text-align: center;
+	position: absolute;
+}
+/* Targets both section elements, centers text and gives a line-height of 2(px?) for an easier view. To compress the content, a width of 55% is added as well */
+.container section {
+	width: 55%;
+	text-align: center;
+	line-height: 2;
+}
+/* Web font used for the area to input text */
+input[type="text"] {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  	padding: 10px 10px;
+  	box-sizing: border-box;
+}
+/* Spaced button from input area */
+button {
+	margin-top: 10px;
+}
+/* Doggo image moved to the bottom right by floating and using padding to position */
+.photo img {
+	width: 300px;
+	height: auto;
+	float: right;
+	padding-right: 50px;
+	padding-top: 345px;
+}
+/* Used relative positioning for the unordered list */
+#gifList {
+  position: relative;
+}
+/* Removed bullet points and used absolute positioning so element is positioned absolutely to its first positioned parent */
+#gifList li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+}
+/* Used display: block for list. Makes it stack on top of each other or start a new line and easier to set width and height properties */
+#gifList li {
+	display: block;
+}
+/* GIF's below are marginalized, padded and sized to position evenly around each other on the bottom left corner of the webpage */
+.giphy {
+  left: 0px;
+  width: 269px;
+  padding-top: 470px;
+}
+
+.giphy2 {
+  position: absolute;
+  left: 165px;
+  width: 95px;
+  padding-top: 380px;
+}
+
+.giphy3 {
+	margin-left: 230px;
+	width: 250px;
+	padding-top: 475px;
+}
+/* Fixed footer at the bottom, center of webpage  */
+footer {
+	position:fixed;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}

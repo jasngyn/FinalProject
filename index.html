@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <script src="main.js" async></script>
+    <style>
+      .checked {
+        text-decoration:line-through; 
+      }
+    </style>
+    <link href="main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  </head>
+  <body>
+     <!-- Added a doggo image and used a class to identify when styling-->
+	  <div class="photo">
+	    <img src="img/doggos.png" alt="doggos">
+	  </div>
+   <div class="container">
+      <header>
+        <h1>Check It - The Simple To Do List</h1>
+      </header>
+      <main>
+        <section class="column">
+          <!-- Added unicodes and labelled elements with id or class for styling -->
+          <h2 id="h2First"> &#187; Struggling to Stay On Top Of Your To-Dos? &#171; </h2>
+          <p> Staying motivated and on-track can be tricky! Use this simple to do list to help you record all of your to-do tasks. When you've completed the task, check it off and it will move to the bottom of your list auto-magically! Done with that task forever? Click the delete button and your task will be permanently removed. </p>
+        </section>
+		<br>
+        <section class="column">
+          <h2 id="h2List"> My To Do List </h2>
+          <form>
+            <label for="toDo"> &#9998; Add an item to the list: </label>
+            <input type="text" id="toDo" placeholder="Things To Do">
+            <button id="button">Add To List</button>
+          </form>
+          <ul id="toDoList"></ul>
+        </section> 
+      </main>
+      <footer>
+        <p>Check It &copy; 2020 - All Rights Reserved </p>
+      </footer>
+    </div>
+     <!-- Added an unordered list for two gifs so that it's easier to format/position -->
+	  <ul id="gifList">
+		 <li><iframe src="https://giphy.com/embed/1L3JJulZNiquQ" frameBorder="0" class="giphy" allowFullScreen></iframe></li>
+         <!-- .gif obtained from https://giphy.com/stickers/transparent-video-games-1L3JJulZNiquQ -->
+		 <li><iframe src="https://giphy.com/embed/Joahf3vDKCoHSEzAhE" frameBorder="0" class="giphy2" allowFullScreen></iframe></li>
+         <!-- .gif obtained from https://giphy.com/stickers/cat-swipe-up-look-mGcNjsfWAjY5AEZNw6 -->
+		 <li><iframe src="https://giphy.com/embed/mGcNjsfWAjY5AEZNw6" frameBorder="0" class="giphy3" allowFullScreen></iframe>
+		 </li>
+	  </ul>
+  </body>
+</html>
